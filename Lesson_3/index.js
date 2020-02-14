@@ -26,7 +26,7 @@ function callback(err, response, body) {
 }
 
 http.createServer((req, res) => {
-
+	//localhost:4000/news
     if (req.url === '/news') {
 
         res.writeHead(200, {
