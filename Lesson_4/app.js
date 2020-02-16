@@ -20,7 +20,6 @@ let news = {
 function getNews(err, response, body) {
     if (!err && response.statusCode == 200) {
 
-        console.log('getNews');
         news.content.length = 0;
         const $ = cheerio.load(body);
 
