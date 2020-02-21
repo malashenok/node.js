@@ -1,0 +1,22 @@
+{
+  "name": "Lesson_6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "consolidate": "^0.15.1",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.3",
+    "mysql": "^2.18.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

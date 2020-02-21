@@ -1,0 +1,20 @@
+<div>
+    <h1>Всего задач: {{quantity}}</h1>
+    {{#if descriptions}}
+        {{#each descriptions}}
+			<p>Job id: {{this.id}}</p>
+			{{#if this.status}}
+                <s><p>Job title: {{this.title}}</p></s>
+                <p>Job status: Done</p>            
+            {{else}}
+                <p>Job title: {{this.title}}</p>
+                <p>Job status: In Progress</p>            
+            {{/if}}
+        {{/each}}
+    {{/if}}
+    <form method="POST" action="/tasks">
+        <input type="text" name="id" placeholder="Id задачи">
+        <input type="submit">
+    </form>
+
+</div>
