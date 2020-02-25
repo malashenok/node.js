@@ -1,0 +1,19 @@
+<h1>Форма авторизации</h1>
+<form action="/auth" method="POST">
+<div>
+    <input type="text" name="email" placeholder="Введите e-mail">
+</div>
+<div>
+    <input type="password" name="password" placeholder="Введите пароль">
+</div>
+<div>
+    <input type="submit" value="Вход">
+</div>
+<div>
+    <a href="/registration">Зарегистрироваться</a>
+</div>
+</form>
+<hr>
+{{#if error}}
+    <h3 style="color:red;">Неправильный логин или пароль</h3>
+{{/if}}

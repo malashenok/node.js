@@ -1,0 +1,17 @@
+<div>
+    <h1>Новости науки и техники</h1>
+    <p>Кол-во новостей: {{quantity}}</p>
+    <hr>
+    {{#if content}}
+        {{#each content}}
+            <p>{{this}}</p>        
+        {{/each}}
+    {{/if}}
+
+
+<form method="POST" action="/">
+    <input type="text" name="quantity" placeholder="Кол-во новостей">
+    <input type="submit">
+</form>
+
+</div>
